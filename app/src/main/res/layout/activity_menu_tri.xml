@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gwen.vfacture.MenuTriActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#f1eded"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button_consult_date"
+        android:visibility="gone"
+        android:id="@+id/RelativeLayout_consult_date">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_consult_date_du"
+            android:id="@+id/textView_consult_date_du"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_consult_date_du"
+            android:layout_below="@+id/textView_consult_date_du"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_consult_date_au"
+            android:id="@+id/textView_consult_date_au"
+            android:layout_below="@+id/editText_consult_date_du"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_consult_date_au"
+            android:layout_below="@+id/textView_consult_date_au"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="none" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_consult_date_chercher"
+            android:id="@+id/button_consult_date_chercher"
+            android:layout_below="@+id/editText_consult_date_au"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:background="@drawable/rectangle_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_champ_requis"
+            android:id="@+id/textView18"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:layout_marginBottom="5dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_consult_titre"
+        android:id="@+id/textView_consult_titre"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="@string/button_consult_date"
+        android:id="@+id/button_consult_date"
+        android:layout_below="@+id/textView_consult_titre"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_consult_numero"
+        android:id="@+id/button_consult_numero"
+        android:layout_below="@+id/textView_consult_titre"
+        android:layout_toLeftOf="@+id/button_consult_date"
+        android:layout_toStartOf="@+id/button_consult_date"
+        android:layout_alignBottom="@+id/button_consult_date"
+        android:background="@drawable/round_button"/>
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_consult_client"
+        android:id="@+id/button_consult_client"
+        android:layout_below="@+id/textView_consult_titre"
+        android:layout_toRightOf="@+id/button_consult_date"
+        android:layout_toEndOf="@+id/button_consult_date"
+        android:layout_alignBottom="@+id/button_consult_date"
+        android:background="@drawable/round_button"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#f1eded"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button_consult_date"
+        android:visibility="gone"
+        android:id="@+id/RelativeLayout_consult_client">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_consult_code_client"
+            android:id="@+id/textView_consult_code_client"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText_consult_code_client"
+            android:layout_below="@+id/textView_consult_code_client"
+            android:layout_centerHorizontal="true"
+            android:maxLength="9" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_consult_client_chercher"
+            android:id="@+id/button_consult_client_chercher"
+            android:layout_below="@+id/editText_consult_code_client"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_button" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_consult_client_date_du"
+            android:layout_below="@+id/textView_consult_client_date_du"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="none" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_consult_client_date_au"
+            android:layout_below="@+id/textView_consult_client_date_au"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_consult_client_date_du"
+            android:text="@string/textView_consult_client_date_du"
+            android:layout_below="@+id/button_consult_client_chercher"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_consult_client_date_au"
+            android:id="@+id/textView_consult_client_date_au"
+            android:layout_below="@+id/editText_consult_client_date_du"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_champ_requis"
+            android:id="@+id/textView16"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_consult_client_reset_date_du"
+            android:src="@android:drawable/ic_input_delete"
+            android:background="#00ffffff"
+            android:layout_alignTop="@+id/editText_consult_client_date_du"
+            android:layout_toRightOf="@+id/editText_consult_client_date_du"
+            android:layout_toEndOf="@+id/editText_consult_client_date_du"
+            android:layout_alignBottom="@+id/editText_consult_client_date_du"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_consult_client_reset_date_au"
+            android:src="@android:drawable/ic_input_delete"
+            android:background="#00ffffff"
+            android:layout_alignBottom="@+id/editText_consult_client_date_au"
+            android:layout_toRightOf="@+id/editText_consult_client_date_au"
+            android:layout_toEndOf="@+id/editText_consult_client_date_au"
+            android:layout_alignTop="@+id/editText_consult_client_date_au"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#f1eded"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button_consult_date"
+        android:visibility="gone"
+        android:id="@+id/RelativeLayout_consult_facture">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_consult_num_facture"
+            android:id="@+id/textView_consult_num_facture"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText_consult_num_facture"
+            android:layout_below="@+id/textView_consult_num_facture"
+            android:layout_centerHorizontal="true"
+            android:maxLength="9" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_consult_facture_chercher"
+            android:id="@+id/button_consult_facture_chercher"
+            android:layout_below="@+id/editText_consult_num_facture"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_champ_requis"
+            android:id="@+id/textView17"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:layout_marginBottom="5dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

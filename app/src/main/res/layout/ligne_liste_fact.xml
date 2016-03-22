@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp" >
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="F"
+        android:id="@+id/textView_ligne_type"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:background="#4ab746"
+        android:textColor="#000000"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EPOUVENTAIL JEAN"
+        android:id="@+id/textView_ligne_client"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/textView_ligne_num_fact"
+        android:layout_alignLeft="@+id/textView_ligne_num_fact"
+        android:layout_alignStart="@+id/textView_ligne_num_fact"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(01980198)"
+        android:id="@+id/textView_ligne_code_client"
+        android:paddingLeft="5dp"
+        android:layout_alignTop="@+id/textView_ligne_client"
+        android:layout_toRightOf="@+id/textView_ligne_client"
+        android:layout_toEndOf="@+id/textView_ligne_client"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00198460"
+        android:id="@+id/textView_ligne_num_fact"
+        android:paddingLeft="5dp"
+        android:textColor="#69c136"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView_ligne_type"
+        android:layout_toEndOf="@+id/textView_ligne_type"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(10/11/2011)"
+        android:id="@+id/textView_ligne_date_fact"
+        android:layout_above="@+id/textView_ligne_client"
+        android:layout_toRightOf="@+id/textView_ligne_num_fact"
+        android:layout_toEndOf="@+id/textView_ligne_num_fact"
+        android:paddingLeft="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10194.00 €"
+        android:id="@+id/textView_ligne_montant"
+        android:layout_below="@+id/textView_ligne_client"
+        android:layout_toRightOf="@+id/textView_ligne_type"
+        android:layout_toEndOf="@+id/textView_ligne_type"
+        android:paddingLeft="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_ligne_solde"
+        android:layout_below="@+id/textView_ligne_client"
+        android:layout_toRightOf="@+id/textView_ligne_montant"
+        android:layout_toEndOf="@+id/textView_ligne_montant"
+        android:paddingLeft="5dp"
+        android:text="/ 116.00 €"
+        android:textStyle="bold" />
+</RelativeLayout>

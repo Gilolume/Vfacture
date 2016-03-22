@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.materialtabs.fragments.VisuEnteteFrag"
+    android:orientation="vertical">
+
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_visu_num_fact"
+        android:text="Numero f"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code c"
+        android:id="@+id/textView_visu_code_client"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="3dp" />
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom Prenom"
+        android:id="@+id/textView_visu_nom_prenom_client"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView_visu_code_client"
+        android:layout_toEndOf="@+id/textView_visu_code_client"
+        android:paddingLeft="15dp"
+        android:textStyle="bold" />
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero d"
+        android:id="@+id/textView_visu_no_grp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agence"
+        android:id="@+id/textView_visu_cd_ag"
+        android:paddingBottom="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView_visu_date_depart"
+        android:layout_alignEnd="@+id/textView_visu_date_depart"
+        android:layout_marginRight="3dp" />
+
+    <View
+        android:id="@+id/View_prest_separator1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:layout_below="@+id/textView_visu_no_grp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_liste_passager"
+        android:id="@+id/textView_liste_passager"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@+id/View_prest_separator1"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/listView_nom_passager"
+        android:layout_below="@+id/textView_liste_passager"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textFilterEnabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adulte : 0 "
+        android:id="@+id/textView_visu_code_1"
+        android:layout_below="@+id/listView_nom_passager"
+        android:layout_toLeftOf="@+id/textView_visu_code_2"
+        android:layout_toStartOf="@+id/textView_visu_code_2"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enfant : 0"
+        android:id="@+id/textView_visu_code_2"
+        android:layout_below="@+id/listView_nom_passager"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bebe : 0"
+        android:id="@+id/textView_visu_code_3"
+        android:layout_below="@+id/listView_nom_passager"
+        android:layout_toRightOf="@+id/textView_visu_code_2"
+        android:layout_toEndOf="@+id/textView_visu_code_2"
+        android:padding="5dp" />
+
+    <View
+        android:id="@+id/View_separator_2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:layout_below="@+id/textView_visu_code_2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ref vendeur"
+        android:id="@+id/textView_visu_code_fact"
+        android:layout_below="@+id/View_separator_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ref client"
+        android:id="@+id/textView_visu_code_dest"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/textView_visu_code_fact"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date depart"
+        android:id="@+id/textView_visu_date_depart"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textView_visu_code_fact"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date retour"
+        android:id="@+id/textView_visu_date_retour"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView_visu_code_fact"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="3dp" />
+
+    <View
+        android:id="@+id/View_separator_3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:layout_below="@+id/textView_visu_date_retour"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        android:orientation="vertical"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/View_separator_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@+id/textView_visu_nom_et6"
+            android:id="@+id/relative_layout_adresse_fact">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_adresse_de_facturation"
+                android:id="@+id/textView_adresse_de_facturation"
+                android:paddingTop="5dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom"
+                android:id="@+id/textView_visu_nom_et1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/textView_adresse_de_facturation"
+                android:layout_marginLeft="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse"
+                android:id="@+id/textView_visu_nom_et2"
+                android:layout_below="@+id/textView_visu_nom_et1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse suite"
+                android:id="@+id/textView_visu_nom_et3"
+                android:layout_below="@+id/textView_visu_nom_et2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ville"
+                android:id="@+id/textView_visu_nom_et4"
+                android:layout_below="@+id/textView_visu_nom_et3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pays"
+                android:id="@+id/textView_visu_nom_et5"
+                android:layout_below="@+id/textView_visu_nom_et4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mail avant"
+                android:id="@+id/textView_avant_mail"
+                android:layout_below="@+id/textView_visu_nom_et5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mail"
+                android:id="@+id/textView_visu_nom_et7"
+                android:editable="false"
+                android:textIsSelectable="true"
+                android:layout_alignParentBottom="false"
+                android:layout_toRightOf="@+id/textView_avant_mail"
+                android:layout_alignTop="@+id/textView_avant_mail"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tel avant"
+                android:id="@+id/textView_avant_tel"
+                android:layout_below="@+id/textView_visu_nom_et7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero tel"
+                android:id="@+id/textView_visu_nom_et6"
+                android:layout_toRightOf="@+id/textView_avant_tel"
+                android:layout_alignTop="@+id/textView_avant_tel"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:textIsSelectable="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

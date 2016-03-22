@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Vfacture</string>
+
+    <string name="title_activity_login">VFacture</string>
+    <string name="title_activity_menu_tri">Consultation</string>
+    <string name="title_activity__liste_fact">Liste des factures</string>
+    <string name="title_activity__visu_fact_tab">Facture</string>
+
+    <string name="textView_champ_requis">* Champ(s) requis</string>
+    <string name="textView_identifiant">Identifiant</string>
+    <string name="textView_mdp">Mot de passe</string>
+    <string name="button_connexion">Se connecter</string>
+    <string name="button_reconnect_bdd">Reconnexion BDD</string>
+
+    <string name="textView_consult_titre">Consultation par</string>
+    <string name="button_consult_date">Date</string>
+    <string name="button_consult_numero">Numero</string>
+    <string name="button_consult_client">Client</string>
+
+    <string name="textView_consult_date_du">Entre le *</string>
+    <string name="textView_consult_date_au">et le *</string>
+    <string name="button_consult_date_chercher">Chercher</string>
+
+    <string name="textView_consult_code_client">Entrez le code du client *</string>
+    <string name="button_consult_client_chercher">Chercher</string>
+    <string name="textView_consult_client_date_du">Entre le</string>
+    <string name="textView_consult_client_date_au">et le</string>
+
+    <string name="textView_consult_num_facture">Entrez le numero de la facture *</string>
+    <string name="button_consult_facture_chercher">Chercher</string>
+
+
+    <string name="textView_liste_passager">Nom des passagers</string>
+    <string name="textView_adresse_de_facturation">Adresse de facturation</string>
+
+
+</resources>
